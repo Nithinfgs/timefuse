@@ -42,7 +42,7 @@ const prompt = '$ timefuse examples/demo-repo --as-of 2026-10-02 --brief';
 const body = run.stdout.replace(/\n$/, '').split('\n');
 const plain = (/** @type {string} */ l) => l.replace(/\x1b\[\d+m/g, '');
 const cols = Math.max(prompt.length, ...body.map((l) => [...plain(l)].length));
-const CW = 9.6, LH = 20, PAD = 24, TOP = 52;
+const CW = 8.3, LH = 20, PAD = 24, TOP = 52;
 const width = Math.ceil(cols * CW + PAD * 2);
 const height = TOP + (body.length + 2) * LH + PAD;
 
