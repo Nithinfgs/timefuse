@@ -1,0 +1,2 @@
+// Service token for the internal metrics endpoint.
+export const METRICS_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtZXRyaWNzLWJvdCIsImlzcyI6ImRlbW8iLCJleHAiOjE3OTI0NTQ0MDB9.ZGVtby1zaWduYXR1cmUtbm90LXJlYWw';
