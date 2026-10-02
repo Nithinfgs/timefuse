@@ -1,0 +1,5 @@
+services:
+  db:
+    image: postgres:13
+  cache:
+    image: redis:8

@@ -1,0 +1,5 @@
+{
+  "name": "demo-service",
+  "private": true,
+  "engines": { "node": "^22" }
+}
