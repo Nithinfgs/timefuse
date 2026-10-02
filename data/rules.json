@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-02",
+  "note": "Hand-maintained rules for things endoflife.date does not model. Every rule cites its source. PRs welcome.",
+  "actions": [
+    {
+      "action": "actions/upload-artifact",
+      "majors": [1, 2],
+      "date": "2024-06-30",
+      "title": "actions/upload-artifact v1/v2 stopped working",
+      "fix": "Upgrade to actions/upload-artifact@v4 or newer.",
+      "source": "https://github.blog/changelog/2024-04-16-deprecation-notice-v3-of-the-artifact-actions/"
+    },
+    {
+      "action": "actions/download-artifact",
+      "majors": [1, 2],
+      "date": "2024-06-30",
+      "title": "actions/download-artifact v1/v2 stopped working",
+      "fix": "Upgrade to actions/download-artifact@v4 or newer.",
+      "source": "https://github.blog/changelog/2024-04-16-deprecation-notice-v3-of-the-artifact-actions/"
+    },
+    {
+      "action": "actions/upload-artifact",
+      "majors": [3],
+      "date": "2025-01-30",
+      "title": "actions/upload-artifact v3 stopped working",
+      "fix": "Upgrade to actions/upload-artifact@v4 or newer (artifacts are not shared across major versions).",
+      "source": "https://github.blog/changelog/2024-04-16-deprecation-notice-v3-of-the-artifact-actions/"
+    },
+    {
+      "action": "actions/download-artifact",
+      "majors": [3],
+      "date": "2025-01-30",
+      "title": "actions/download-artifact v3 stopped working",
+      "fix": "Upgrade to actions/download-artifact@v4 or newer.",
+      "source": "https://github.blog/changelog/2024-04-16-deprecation-notice-v3-of-the-artifact-actions/"
+    },
+    {
+      "action": "actions/cache",
+      "majors": [1, 2],
+      "date": "2025-03-01",
+      "title": "actions/cache v1/v2 was retired",
+      "fix": "Upgrade to actions/cache@v4 or newer.",
+      "source": "https://github.blog/changelog/2024-09-16-notice-of-upcoming-deprecations-and-changes-in-github-actions-services/"
+    }
+  ],
+  "floatingLabels": [
+    {
+      "label": "ubuntu-latest",
+      "date": "2026-11-01",
+      "approximate": true,
+      "title": "ubuntu-latest moves to Ubuntu 26.04",
+      "fix": "Pin runs-on to ubuntu-24.04 until you have tested 26.04, or test on 26.04 now.",
+      "source": "https://github.com/actions/runner-images/issues/14254"
+    }
+  ]
+}
