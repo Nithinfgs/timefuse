@@ -1,0 +1,51 @@
+{
+  "name": "timefuse",
+  "version": "0.1.0",
+  "description": "Find the code in your repo that will break on a specific date: EOL runtimes, expiring certificates, dated TODOs, retiring CI runners.",
+  "type": "module",
+  "bin": {
+    "timefuse": "bin/timefuse.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "typecheck": "tsc -p jsconfig.json",
+    "demo": "node bin/timefuse.js examples/demo-repo --as-of 2026-10-02",
+    "update-data": "node bin/timefuse.js update-data --out data/eol.json",
+    "render-demo": "node scripts/render-demo.js"
+  },
+  "keywords": [
+    "eol",
+    "end-of-life",
+    "cli",
+    "devtools",
+    "ci",
+    "github-actions",
+    "certificates",
+    "technical-debt",
+    "maintenance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithinfgs/timefuse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nithinfgs/timefuse/issues"
+  },
+  "homepage": "https://github.com/Nithinfgs/timefuse#readme",
+  "author": "Nithinfgs",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
